@@ -38,17 +38,17 @@
 
 
         order.addEventListener("click", () => {
-            let name = document.getElementById("user_name");
-            let email = document.getElementById("user_email");
-            let phone = document.getElementById("user_number");
+            let names = document.getElementById("user_name");
+            let emails = document.getElementById("user_email");
+            let phones = document.getElementById("user_number");
 
             let data = {
-                name: name,
-                email: email,
-                phone: phone
+                name: names,
+                email: emails,
+                phone: phones
             }
             tg.sendData(JSON.stringify(data));
-            
+
             tg.close();
         });
     </script>
