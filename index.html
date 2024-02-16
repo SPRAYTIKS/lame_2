@@ -38,9 +38,9 @@
 
 
         order.addEventListener("click", () => {
-            let names = document.getElementById("user_name");
-            let emails = document.getElementById("user_email");
-            let phones = document.getElementById("user_number");
+            let names = document.getElementById("user_name").value;
+            let emails = document.getElementById("user_email").value;
+            let phones = document.getElementById("user_number").value;
 
             let data = {
                 name: names,
